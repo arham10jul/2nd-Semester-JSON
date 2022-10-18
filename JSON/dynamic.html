@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Status</th>
+        <th>Empty</th>
+        <th>Image</th>
+    </tr>
+</body>
+</html>
+<script>
+  var data=[
+    {"id":101, "name":"Ali", "status":true, "empty":null, "img":"images/img1.jpg"},
+    {"id":102, "name":"Ahmed", "status":false, "empty":null, "img":"images/img2.jpg"},
+    {"id":103, "name":"Affan", "status":true, "empty":null, "img":"images/img3.jpg"},
+    {"id":104, "name":"Abeer", "status":false, "empty":null, "img":"images/img4.jpg"},
+    {"id":105, "name":"Azhar", "status":true, "empty":null, "img":"images/img5.jpg"},
+  ] 
+  for(var i in data )
+  {
+    document.writeln("<tr>");
+        document.writeln("<td>" +data[i].id+"</td>");
+        document.writeln("<td>" +data[i].name+"</td>");
+        document.writeln("<td>" +data[i].status+"</td>");
+        document.writeln("<td>" +data[i].empty+"</td>");
+         document.writeln("<td><img src=" +data[i].img+" height='100' width='100'></td></tr>");
+  } 
+  document.writeln("</table>")
+</script>
